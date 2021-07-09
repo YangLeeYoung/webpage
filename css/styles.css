@@ -1,0 +1,391 @@
+body {
+    color: #222831;
+    font-family: 'Merriweather', serif;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    
+}
+
+.heading-main {
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    font-weight: 800;
+    line-height: 10rem;
+}
+
+.heading-sub {
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+/* Header Movement */
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Header Movement End */
+
+h1 {
+    color: #66BFBF;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+
+}
+
+h2 {
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+hr {
+    width: 4%;
+    border-style: dotted none none;
+    border-width: 7px;
+    margin-left: 47.5%;
+    border-top-color: #bbb6b6; 
+}
+
+p {
+    line-height: 2;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.copyright {
+    margin: 40px auto auto 20px;
+    color: #EAF6F6;
+    font-size: 0.75rem;
+}
+
+.cloud-bottom {
+    position: absolute;
+    left: 250px;
+    bottom: 300;
+}
+
+.cloud-top {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.contact-me {
+    background-color: white;
+    margin-top: 100px;
+}
+
+.contact-msg {
+    margin: 40px auto 60px;
+    width: 40%;
+}
+
+.greeting {
+    margin: auto;
+    width: 60%;
+    padding: 100px;
+}
+
+.top-container {
+    line-height: 1.5;
+    padding-top: 100px;
+    background-color: #EAF6F6;
+    position: relative;
+    /* height: 100vh;  */
+}
+
+.middle-container {
+    padding-top: 100px;
+    background-color: white;
+}
+
+.arrow {
+    color: rgb(85, 92, 92);
+}
+
+#skills {
+    align-content: center;
+    background-color: #BF78AC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 80vh;
+}
+#skills-carousel {
+    background-color: #BF78AC;
+}
+
+#skills h3 {
+    color: white;
+    font-weight: 800;
+}
+
+#skills a {
+    color: white;
+}
+
+#skills a:hover {
+    color: black;
+}
+
+
+#skills p {
+    color: white;
+    font-weight: 700;
+}
+
+
+.skills-title {
+    padding-top: 2rem;
+    color: white;
+}
+.skill-row {
+    width: 55%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+
+#skills .btn-outline-skill {
+    background-color: #BFAE52;
+    border-radius: 8px;
+    margin: 0px 3px 5px 0px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 20rem;
+    width: auto;
+}
+
+.skills-image1 {
+    background-image:url(http://api.thumbr.it/whitenoise-361x370.png?background=#EAF6F6&noise=ACB5B5&density=13&opacity=62);
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    margin: 0px 30px 30px 0px;
+    border-radius: 50%;
+}
+
+.skills-image2 {
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    margin: 0px 30px 30px 0px;
+    border-radius: 50%;
+}
+
+.app-container {
+    padding-bottom: 100px;
+    background-color: white;
+    position: relative;
+}
+
+#apps {
+    align-content: center;
+    background-color: #EAF6F6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 80vh;
+}
+.app-title {
+    padding-top: 2rem;
+}
+
+.app-row {
+    width: 55%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+
+.app-image {
+    height: 5rem;
+    width: 5rem;
+    float: right;
+    margin: 0px 0px 30px 30px;
+    border-radius: 50%;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 50px 0px 20px;
+    box-sizing: border-box;
+}
+
+
+/* Social Media icons */
+ul {
+    justify-content: center;
+    display: flex;
+
+}
+
+:root {
+    --primary-color: #054863;
+    --secondary-color: #06857B;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li{
+    cursor: pointer;
+    list-style-type: none;
+    width: 5rem;
+    height: 5rem;
+    border: 0.1875rem solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    position: relative;
+}
+
+
+ul li i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ul li:hover::before {
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+ul li:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.125rem dashed var(--secondary-color);
+    box-sizing: border-box;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+ul li:hover::after {
+    opacity: 1;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: scale(0.92) rotate(0deg);
+    }
+    100% {
+        transform: scale(0.92) rotate(360deg);
+    }
+}
+
+
+/* Social media icons end */
+
+.top-container span {
+    text-decoration: underline;
+}
+
+/* Contact me button */
+.contact-me .btn {
+    background: #11CDD4;
+    background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+    background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 12px;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #11CDD4 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact-me .btn:hover {
+    border: solid #2BC4AD 1px;
+    background: #30E3CB;
+    background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* Contact me button end */
